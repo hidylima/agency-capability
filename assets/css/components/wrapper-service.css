@@ -1,0 +1,105 @@
+.wrapper-service {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+
+    margin: 0 auto;
+    padding: var(--spacing-big) var(--spacing-container-left) var(--spacing-big) var(--spacing-container-right);
+
+}
+
+.wrapper-service>.title {
+    max-width: 500px;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: var(--color-third);
+    opacity: .9;
+
+}
+
+.wrapper-service>.paragraph {
+    margin-bottom: var(--spacing-big);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+
+    letter-spacing: .7px;
+    color: var(--color-third);
+    opacity: .9;
+}
+
+.wrapper-service .service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.wrapper-service .item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .wrapper-service .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}@media screen and (max-width:400px) { 
+    .wrapper-service .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.wrapper-service .logo {
+    width: 100%;
+    margin-bottom: var(--spacing-very);
+    text-align: center;
+}
+
+.wrapper-service .image {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper-service>.service .title {
+    font-size: 1.4rem;
+    font-weight: normal;
+    list-style: 1.4rem;
+    text-align: center;
+    color: #143763;
+    opacity: .9;
+}
+
+.wrapper-service>.service .title::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 3px;
+    margin: var(--spacing-very) auto;
+    background-color: var(--color-second);
+    opacity: .9;
+}
+
+.wrapper-service .description {
+    margin-bottom: var(--spacing-big);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: normal;
+    opacity: .9;
+}

@@ -17,11 +17,17 @@
     --spacing-container-bottom: 2.71vh;
 
     --spacing-very-small: 5px;
+    --spacing-very: 15px;
     --spacing-small: 35px;
     --spacing-big: 70px;
     --spacing-very-big: 140px;
 }
-
+@media screen and (max-width:480px) {
+    :root{
+        --spacing-container-left: 5vw;
+    --spacing-container-right: 5vw;
+    }
+ }
 
 /*
 @media screen and (min-width:320px) { }

@@ -12,7 +12,7 @@
         padding-top: calc(var(--spacing-very-small) + var(--spacing-very-small));
     }
  } 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 501px) {
     .wrapper-information{ 
         display: none;
     }

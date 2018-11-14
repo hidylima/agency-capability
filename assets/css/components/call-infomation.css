@@ -81,18 +81,21 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
 
     .call-infomation .title {
+        
+        max-width: 500px;
         font-size: 2rem;
         line-height: 1.7;
-        max-width: 500px;
+        text-align: center;
     }
 }
 
 @media screen and (max-width:500px) {
     .call-infomation .title {
         font-size: 1.8rem;
+        text-align: center;
     }
 }
 
@@ -160,5 +163,10 @@
 @media screen and (max-width: 500px) {
     .call-infomation .imagem {
         bottom: 5px;
+    }
+}
+@media screen and (max-width: 382px) {
+    .call-infomation .imagem {
+        height: 200px
     }
 }
