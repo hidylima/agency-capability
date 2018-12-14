@@ -1,0 +1,105 @@
+.wrapper-client {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--spacing-big) var(--spacing-container-left) var(--spacing-big) var(--spacing-container-right);
+    background-color: var(--color-zero);
+}
+
+.wrapper-client .title {
+    margin-bottom: var(--spacing-big);
+    font-size: 3.6rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: var(--color-first);
+    opacity: .9;
+}
+
+.wrapper-client .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.wrapper-client .item {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.wrapper-client .logo {
+    display: block;
+    height: 100px;
+    background-image: url("../../img/logo-company.png");
+    background-repeat: no-repeat;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.wrapper-client .logo:hover {
+    opacity: 1;
+}
+
+.wrapper-client .logo.-one {
+    width: 180px;
+    background-position: -3px 0px;
+}
+
+@media only screen and (max-width: 1123px) {
+    .wrapper-client .logo.-one {
+        width: 150px;
+        background-position: -3px 11px;
+        background-size: 900px 80px;
+    }
+}
+
+.wrapper-client .logo.-two {
+    width: 222px;
+    background-position: -248px 0;
+}
+
+@media only screen and (max-width: 1123px) {
+    .wrapper-client .logo.-two {
+        width: 130px;
+        /* background-position: -248px 0; */
+        background-size: 900px 80px;
+    }
+}
+
+.wrapper-client .logo.-three {
+    width: 170px;
+    background-position: -530px 0px;
+}
+
+@media only screen and (max-width: 1123px) {
+    .wrapper-client .logo.-three {
+        background-position: -530px 0px;
+        background-size: 1139px 80px;
+    }
+}
+
+.wrapper-client .logo.-four {
+    width: 180px;
+    background-position: -747px 0px;
+}
+
+@media only screen and (max-width: 1123px) {
+    .wrapper-client .logo.-four {
+        width: 150px;
+        background-position: -747px 0px;
+        background-size: 1110px 80px;
+    }
+}
+
+.wrapper-client .logo.-five {
+    width: 180px;
+    background-position: -958px 0px;
+}

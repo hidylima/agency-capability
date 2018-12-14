@@ -1,0 +1,122 @@
+.wrapper-team {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--spacing-big) var(--spacing-container-left) var(--spacing-big) var(--spacing-container-right);
+    background-color: rgba(26, 25, 25, 0.8);
+}
+
+.wrapper-team .title {
+    font-size: 3.6rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: var(--color-zero);
+    opacity: .9;
+
+}
+
+.wrapper-team .subtitle {
+    margin-bottom: var(--spacing-small);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: .7px;
+    font-weight: 300;
+    color: var(--color-zero);
+    opacity: .9;
+}
+
+.wrapper-team .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1444px;
+    margin: 0 auto;
+    margin-bottom: var(--spacing-small);
+}
+
+@media screen and (max-width: 468px) {
+    .wrapper-team .team {
+        flex-direction: column;
+    }
+}
+
+.wrapper-team .profile {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 180px;
+    height: 180px;
+}
+
+@media screen and (max-width: 1110px) {
+    .wrapper-team .profile {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .wrapper-team .profile {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .wrapper-team .profile:first-child {
+        display: none;
+    }
+    .wrapper-team .profile:last-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 468px){
+    .wrapper-team .profile:nth-child(3) {
+        margin: var(--spacing-very)
+ 0;    }
+}
+
+.wrapper-team .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wrapper-team .bullets {
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width: 468px){
+    .wrapper-team .bullets {
+        display: none;
+    }
+}
+.wrapper-team .bullet {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: var(--color-zero);
+    text-indent: -9999px;
+    transition: opacity 200ms linear;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.wrapper-team .bullet:not(:last-child) {
+    margin-right: 5px;
+}
+
+.wrapper-team .bullet.-isActive {
+    opacity: 1;
+}

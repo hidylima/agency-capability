@@ -1,0 +1,103 @@
+.wrapper-case {
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) { 
+    .wrapper-case{
+        flex-direction: column}
+}
+.wrapper-case .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: var(--spacing-very-big) var(--spacing-container-left) var(--spacing-small) var(--spacing-container-right);
+    list-style: none;
+}
+@media screen and (max-width:768px) { 
+    .wrapper-case .item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 100%;
+        max-width: 100%;
+    
+    }
+}
+.wrapper-case .item.-video {
+    background-image: linear-gradient(rgba(11, 81, 178, 0.8), rgba(15, 87, 187, 0.8)), url(../../img/bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.wrapper-case .item.-dell {
+    padding: 50px var(--spacing-container-left) var(--spacing-small) var(--spacing-container-right);
+
+}
+
+.wrapper-case .description {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-small);
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-zero);
+}
+
+.wrapper-case .link {
+    display: block;
+    margin-bottom: var(--spacing-big);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    color: var(--color-zero);
+}
+
+.wrapper-case .subtitle {
+    margin-bottom: var(--spacing-very-small);
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--color-zero);
+}
+
+.wrapper-case .paragraph {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--color-zero);
+}
+
+.wrapper-case .logo {
+    
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto var(--spacing-very) ;
+    text-align: center;
+
+}
+
+.wrapper-case .description.-dell {
+    margin-bottom: var(--spacing-very);
+    color: #143763;
+}
+
+.wrapper-case .link.-dell {
+ margin-bottom: var(--spacing-big);
+    color: #143763;
+}
+
+.wrapper-case .subtitle.-dell {
+
+    color: var(--color-third);
+}
+
+.wrapper-case .paragraph.-dell {
+    color: var(--color-third);
+}

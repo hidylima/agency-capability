@@ -1,0 +1,94 @@
+.wrapper-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;;
+}
+
+.wrapper-footer>.menu {
+
+    padding: var(--spacing-small) var(--spacing-container-left) var(--spacing-small) var(--spacing-container-right);
+    border-bottom: 1px solid #37393a;
+    background-color: #303030;
+}
+
+.wrapper-footer>.menu .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.wrapper-footer>.menu .item {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.wrapper-footer>.menu .link {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    opacity: .8;
+}
+
+.wrapper-footer>.menu .link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.wrapper-footer>.information {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-small) var(--spacing-container-left) var(--spacing-small) var(--spacing-container-right);
+    background-color: #303030;
+}
+
+.wrapper-footer>.information .utilities {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-footer>.information .utility {
+    padding: var(--spacing-very-small) 0;
+    font-size: 1rem;
+    color: #bebebe;
+    opacity: .8;
+}
+
+.wrapper-footer>.information .utility.-spotlight {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e9e9e9;
+    opacity: .9;
+}
+
+.wrapper-footer>.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-very) var(--spacing-container-left) var(--spacing-very) var(--spacing-container-right);
+    background-color: var(--color-third)
+}
+
+.wrapper-footer>.foot .copyright {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.7;
+    letter-spacing: .1rem;
+    color:var(--color-zero);
+    opacity: .8;
+}
+.wrapper-footer>.foot .link{color: var(--color-zero)
+
+}
+.wrapper-footer>.foot .link:hover{color: var(--color-zero);
+    text-decoration: underline;
+
+}
+
+.wrapper-footer>.foot .span{
+    padding: 0 5px;
+}
+
+.wrapper-footer>.foot .social {}
